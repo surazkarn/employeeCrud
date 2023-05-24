@@ -10,6 +10,9 @@ This is a Node.js API built with Express.js and Sequelize(MySQL ORM), providing 
 - [Database Setup](#database-setup)
 - [Sequelize Migrations](#sequelize-migrations)
 - [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Prerequisites
 
