@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "758fdeda-5ed5-43d9-b143-de22081e4952",
+		"name": "employeeCrud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25076866"
+	},
+	"item": [
+		{
+			"name": "employees/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jhakash\",\r\n  \"contacts\": [\r\n    {\r\n      \"type\": \"email\",\r\n      \"value\": \"Jhaakash@gmail.com\"\r\n    },\r\n    {\r\n      \"type\": \"phone\",\r\n      \"value\": \"2232256790\"\r\n    },\r\n    {\r\n      \"type\": \"address\",\r\n      \"value\": \"patna\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/employees/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"suraj\", \"contacts\":\"8210095612\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/employees/list",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/list?page=1&limit=3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"suraj\", \"contacts\":\"8210095612\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/employees/list?page=1&limit=3",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"surajkarn\", \"contacts\":\"8210095612\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/employees/update/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/delete/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/employees/delete/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees",
+						"delete",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees/get/4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"suraj\", \"contacts\":\"8210095612\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3002/employees/get/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees",
+						"get",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
